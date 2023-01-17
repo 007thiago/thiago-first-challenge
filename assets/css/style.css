@@ -17,6 +17,10 @@
 	border: 0
 }
 
+p {
+	font-family: 'Roboto', sans-serif;
+}
+
 main > section {
 	display: flex;
 	align-items: center;
@@ -28,34 +32,15 @@ main > section {
 	text-align: center;
 }
 
-main > section.second {
-	display: flex;
-	align-items: center;
-	width: 90%;
-	margin-left: auto;
-	margin-right: auto;
-	padding: 15px;
-	justify-content: space-evenly;
-	text-align: center;
-}
-
-div:nth-child(2) > p {
-	font-size: 3vw;
-	padding: 10px;
-	font-family: 'Roboto', sans-serif;
-}
-
 section.second div:nth-child(2) p:first-child {
 	font-size: 2vw;
 	padding: 10px;
-	font-family: 'Roboto', sans-serif;
 }
 
 section.second div:nth-child(2) p:last-child {
 	font-size: 2vw;
 	font-weight: none;
 	padding: 10px;
-	font-family: Arial;
 }
 
 section > div {
@@ -68,9 +53,20 @@ section > div:last-child {
 	width: 30vw;
 }
 
-div:nth-child(2) > p:first-child {
-	font-size: 6vw;
+.text_3rd {
+	font-size: 2vw;
 }
+
+p.text1 {
+	font-size: 3vw;
+	padding: 10px;
+}
+
+p.text2 {
+	font-size: 1.5vw;
+	padding: 10px;
+}
+
 
 main img {
 	/*width: 80%;*/
