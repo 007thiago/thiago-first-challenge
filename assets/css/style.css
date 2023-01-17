@@ -55,6 +55,7 @@ section > div:last-child {
 
 .text_3rd {
 	font-size: 2vw;
+	padding: 10px;
 }
 
 p.text1 {
@@ -101,6 +102,17 @@ input {
 
 .inputIndex:hover {
 	scale: 1.5;
+}
+
+div.radioAlign {
+	display: block;
+	text-align: left;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.radioAlign label {
+	font-size: 1.5vw;
 }
 
 @media (max-width: 590px) {
