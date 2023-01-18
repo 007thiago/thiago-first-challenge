@@ -4,9 +4,7 @@
 /* RESET DE BROWSER */
 * {
 	padding: 0;
-	margin-top: 1%;
-	margin-right: 1%;
-	margin-left: 1%;
+	margin: 0;
 	vertical-align: baseline;
 	list-style: none;
 	border: 0
@@ -22,6 +20,7 @@ main > section {
 	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
+	justify-content: space-evenly;
 }
 
 section.second div:nth-child(2) p:first-child {
@@ -38,34 +37,19 @@ section.second div:nth-child(2) p:last-child {
 }
 
 section > div {
-	width: 90%;
-	/*width: 30vw;*/
+	width: 40%;
+	padding: 20px;
 }
 
-div.container2nd {
+.imgIndex {
 	width: 80%;
 }
 
-div.div2nd {
-	width: 100%;
-}
-
-section > div:first-child {
-	width: 50%;
-}
-
-section > div:last-child {
-	width: 50%;
-	/*width: 30vw;*/
-}
-
 p.text_3rd {
-	/*font-size: 1.5vw;*/
-	font-size: 100%;
 	font-weight: bold;
-	padding: 10px;
-	margin-left: 25%;
 	text-align: left;
+	font-size: 150%;
+	padding: 10px;
 }
 
 div.containerButtons3rd {
@@ -78,13 +62,30 @@ div.containerButtons3rd {
 
 div.divButtons3rd {
 	display: flex;
+	padding: 15px;
 	justify-content: space-between;
 }
 
-.button3rd {
-	/*margin-left: auto;
-	margin-right: auto;*/
+.buttonPadrao {
+	/*width: 8vw;*/
+	width: 40%;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	background-color: #3EB25E;
+	border-radius: 35px;
+	padding: 5px;
+	
+}
+
+.buttonSkip {
 	width: 100%;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	background-color: #3EB25E;
+	border-radius: 35px;
+	padding: 10px;
 }
 
 .displayBlock {
@@ -94,7 +95,6 @@ div.divButtons3rd {
 p.text1 {
 	/*font-size: 3vw;*/
 	font-size: 550%;
-	padding: 10px;
 	text-align: center;
 	font-weight: bold;
 }
@@ -114,7 +114,7 @@ p.text2 {
 
 
 main img {
-	width: 65%;
+	width: 100%;
 	/*width: 30vw;*/
 }
 
@@ -135,17 +135,16 @@ div.buttonsFlex {
 	margin-right: auto;
 }
 
-input {
+/*input {
 	/*width: 8vw;*/
-	width: 50%;
+	/*width: 50%;
 	color: #FFFFFF;
 	font-weight: bold;
 	font-family: 'Roboto', sans-serif;
-	letter-spacing: 0.1em;
 	background-color: #3EB25E;
 	border-radius: 35px;
 	padding: 10px;
-}
+}*/
 
 .inputIndex {
 	width: 35%;
@@ -155,7 +154,7 @@ input {
 	border: 1px solid rgba(0, 0, 0, 0.25);
 	border-radius: 15px;
 	/*width: 25vw;*/
-	width: 50%;
+	width: 100%;
 	padding: 8px;
 	font-family: 'Roboto', sans-serif;
 }
@@ -165,10 +164,13 @@ input {
 }
 
 div.radioAlign {
-	display: block;
-	text-align: left;
-	margin-left: 22%;
-	width: 25%;
+	/*display: flex;*/
+	/*flex-direction: column;
+	text-align: right;*/
+	margin-right: 50%;
+	font-size: 150%;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
 }
 
 div.radioAlign label {
