@@ -15,22 +15,32 @@
 				</div>
 				<div>
 					<p class="text_3rd"> What is the status of your account? </p>
-					<select name="select_account" id="select_account">
-						<option value="I don't have an account"> A </option>
-						<option value="I don't remember my password"> B </option>
-						<option value="C"> C </option>
+					<select name="select_account" id="select_account" class="select3rd">
+						<option value="no_account" > I have not created an account yet. </option>
+						<option value="forgot_password"> I forgot my password. </option>
+						<option value="forgot username"> I forgot my username. </option>
 					
 					</select>
+					<p class="text_3rd"> In which financial markets do you operate? </p>
 					<div class="radioAlign">
-						<p class="text_3rd"> In which financial markets do you operate? </p>
-						<p> <input type="radio" id="stock" name="" value="stock">
+						<p> <input type="radio" id="stock" name="which_market" value="stock">
 						<label for="stock"> Stock </label></p>
-						<p> <input type="radio" id="financial" name="" value="financial">
+						<p> <input type="radio" id="financial" name="which_market" value="financial">
 						<label for="financial"> Financial </label> </p>
-						<p> <input type="radio" id="some op" name="" value="some op">
+						<p> <input type="radio" id="some op" name="which_market" value="some op">
 						<label for="some op"> Some op </label> </p>
-						<p> <input type="radio" id="bitcoin" name="" value="bitcoin">
+						<p> <input type="radio" id="bitcoin" name="which_market" value="bitcoin">
 						<label for="bitcoin"> Bitcoin </label> </p>
+					</div>
+					<div class="containerButtons3rd">
+						<div class="divButtons3rd">
+							<a href="2nd.html"> <input type="button" value="Back" class="buttonPadrao"> </a>
+							<a href="4th.html"> <input type="button" value="Next" class="buttonPadrao"> </a>
+
+						</div>
+						<div class="displayBlock">
+							<input type="button" value="Skip" class="button3rd">
+						</div>
 					</div>
 				</div>
 		
