@@ -1,17 +1,12 @@
-/*@font-face {
-	font-family: "Inter-Regular";
-	src: url("../font/Inter-Regular.ttf");
-	format("truetype");
-}*/
-
-@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@700&display=swap');
+/* IMPORTACAO DE FONTE */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
 
 /* RESET DE BROWSER */
 * {
 	padding: 0;
 	margin-top: 1%;
-	margin-left: 0;
-	margin-right: 0;
+	margin-right: 1%;
+	margin-left: 1%;
 	vertical-align: baseline;
 	list-style: none;
 	border: 0
@@ -24,54 +19,107 @@ p {
 main > section {
 	display: flex;
 	align-items: center;
-	width: 90%;
+	text-align: center;
 	margin-left: auto;
 	margin-right: auto;
-	padding: 15px;
-	justify-content: space-evenly;
-	text-align: center;
 }
 
 section.second div:nth-child(2) p:first-child {
-	font-size: 2vw;
+	/*font-size: 2vw;*/
+	font-size: 40%;
 	padding: 10px;
 }
 
 section.second div:nth-child(2) p:last-child {
-	font-size: 2vw;
+	/*font-size: 2vw;*/
+	font-size: 30%;
 	font-weight: none;
 	padding: 10px;
 }
 
 section > div {
-	/*width: 90%;*/
-	width: 30vw;
+	width: 90%;
+	/*width: 30vw;*/
+}
+
+div.container2nd {
+	width: 80%;
+}
+
+div.div2nd {
+	width: 100%;
+}
+
+section > div:first-child {
+	width: 50%;
 }
 
 section > div:last-child {
-	/*width: 90%;*/
-	width: 30vw;
+	width: 50%;
+	/*width: 30vw;*/
 }
 
-.text_3rd {
-	font-size: 2vw;
+p.text_3rd {
+	/*font-size: 1.5vw;*/
+	font-size: 100%;
+	font-weight: bold;
 	padding: 10px;
+	margin-left: 25%;
+	text-align: left;
+}
+
+div.containerButtons3rd {
+	/*width: 30vw;*/
+	/*width: 80%;*/
+	width: 55%;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+div.divButtons3rd {
+	display: flex;
+	justify-content: space-between;
+}
+
+.button3rd {
+	/*margin-left: auto;
+	margin-right: auto;*/
+	width: 100%;
+}
+
+.displayBlock {
+	display: block;
 }
 
 p.text1 {
-	font-size: 3vw;
+	/*font-size: 3vw;*/
+	font-size: 550%;
 	padding: 10px;
+	text-align: center;
+	font-weight: bold;
+}
+
+p.text1-2 {
+	font-size: 150%;
+	padding: 10px;
+	text-align: center;
+	font-weight: bold;
 }
 
 p.text2 {
-	font-size: 1.5vw;
+	/*font-size: 1.5vw;*/
+	font-size: 200%;
 	padding: 10px;
 }
 
 
 main img {
-	/*width: 80%;*/
-	width: 30vw;
+	width: 65%;
+	/*width: 30vw;*/
+}
+
+.buttonPadrao {
+	width: 100%;
 }
 
 section > div:nth-child(2) div:first-child {
@@ -82,22 +130,34 @@ section > div:nth-child(2) div:first-child {
 
 div.buttonsFlex {
 	display: flex;
-	flex-wrap: nowrap;
-	justify-content: space-evenly;
+	justify-content: space-between;
 	margin-left: auto;
 	margin-right: auto;
 }
 
 input {
-	width: 8vw;
+	/*width: 8vw;*/
+	width: 50%;
 	color: #FFFFFF;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	letter-spacing: 0.1em;
 	background-color: #3EB25E;
 	border-radius: 35px;
-	padding: 12px;
+	padding: 10px;
 }
 
 .inputIndex {
-	
+	width: 35%;
+}
+
+.select3rd {
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+	/*width: 25vw;*/
+	width: 50%;
+	padding: 8px;
+	font-family: 'Roboto', sans-serif;
 }
 
 .inputIndex:hover {
@@ -107,14 +167,16 @@ input {
 div.radioAlign {
 	display: block;
 	text-align: left;
-	margin-left: auto;
-	margin-right: auto;
+	margin-left: 22%;
+	width: 25%;
 }
 
 div.radioAlign label {
-	font-size: 1.5vw;
+	/*font-size: 1.5vw;*/
+	font-size: 70%;
 }
 
+/* MEDIA QUERIES */
 @media (max-width: 590px) {
 	main > section, main > section.second {
 		display: block;
@@ -126,21 +188,27 @@ div.radioAlign label {
 	}
 	
 	section > div {
-	/*width: 90%;*/
-	width: 30vw;
-	margin-left: auto;
-	margin-right: auto;
+		/*width: 30vw;*/
+		width: 100%;
+		margin-left: auto;
+		margin-right: auto;
 	}
 
-	section > div:last-child {
-		/*width: 90%;*/
+	/*section > div:last-child {
 		width: 30vw;
+	}*/
+	
+	p.text2 {
+		/*font-size: 1.5vw;*/
+		font-size: 120%;
+		padding: 10px;
 	}
 }
 
 @media (min-width: 500px) and (max-width: 1192px){
 	input {
-		width: 18vw;
+		/*width: 18vw;*/
+		width: 80%;
 		color: #FFFFFF;
 		background-color: #3EB25E;
 		border-radius: 35px;
@@ -150,7 +218,8 @@ div.radioAlign label {
 	}
 	div.buttonsFlex {
 		display: flex;
-		width: 40vw;
+		/*width: 40vw;*/
+		width: 100%;
 		flex-wrap: nowrap;
 		justify-content: space-evenly;
 		margin-left: auto;
