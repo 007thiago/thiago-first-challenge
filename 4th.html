@@ -8,37 +8,41 @@
 	<script src="assets/js/script.js"> </script>
 </head>
 <body>
+	
 	<main>
 		<section>
 				<div>
-					<img src="assets/image/two.svg">
+					<img src="assets/image/three.svg">
 				</div>
 				<div>
+					<div class="errorMessageForm">
+						<p> You need to fill at least one box. </p>
+					</div>
 					<p class="text_3rd"> How do you decide to invest? </p>
 					<select name="select_account" id="select_account" class="select3rd">
-						<option value="no_account" > I have not created an account yet. </option>
+						<option value="no_account" > I have not invested yet. </option>
 						<option value="forgot_password"> I forgot my password. </option>
 						<option value="forgot username"> I forgot my username. </option>
 					
 					</select>
 					<p class="text_3rd"> What resources have you used or are you using for your training? </p>
-					<form class="form4th">
+					<form class="form4th" name="form4" action="5th.html" onsubmit="return validateForm(this)" method="get">
 					<div class="radioAlign">
-							<input type="checkbox" id="stock" name="which_market" value="stock">
-							<label for="stock"> Stock </label>
-							<input type="checkbox" id="financial" name="which_market" value="financial">
-							<label for="financial"> Financial </label>
-							<input type="checkbox" id="some op" name="which_market" value="some op">
-							<label for="some op"> Some op </label>
-							<input type="checkbox" id="bitcoin" name="which_market" value="bitcoin">
-							<label for="bitcoin"> Bitcoin </label>
+							<p><input type="checkbox" id="stock" name="op1" value="stock">
+							<label for="stock"> Stock </label></p>
+							<p><input type="checkbox" id="financial" name="op2" value="financial">
+							<label for="financial"> Financial </label></p>
+							<p><input type="checkbox" id="some op" name="op3" value="some op">
+							<label for="some op"> Some op </label></p>
+							<p><input type="checkbox" id="bitcoin" name="op4" value="bitcoin">
+							<label for="bitcoin"> Bitcoin </label> </p>
 					</div>
 					<div class="divButtons3rd">
-							<a href="4th.html" class="buttonPadrao"> <input type="submit" value="Next" class="buttonPadrao"> </a>
-							<a href="3rd.html" class="buttonPadrao"> <input type="button" value="Back" class="buttonPadrao"> </a>
+							<!--<a href="4th.html" class="buttonPadraoLink"> --><input type="submit" value="Next" class="buttonPadrao"> <!--</a>-->
+							<!--<a href="3rd.html" class="buttonPadraoLink"> --><input type="button" value="Back" class="buttonPadrao"> </a>
 					</div>
 					</form>
-							<a href="4th.html"> <input type="button" value="Skip" class="buttonSkip"> </a>
+							<a href="5th.html"> <input type="button" value="Skip" class="buttonSkip"> </a>
 					</div>
 		
 		</section>
