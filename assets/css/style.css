@@ -18,8 +18,6 @@ main > section {
 	display: flex;
 	align-items: center;
 	text-align: center;
-	margin-left: auto;
-	margin-right: auto;
 	justify-content: space-evenly;
 }
 
@@ -68,13 +66,20 @@ div.divButtons3rd {
 
 .buttonPadrao {
 	/*width: 8vw;*/
-	width: 40%;
+	width: 10%;
 	color: #FFFFFF;
 	font-weight: bold;
 	font-family: 'Roboto', sans-serif;
 	background-color: #3EB25E;
 	border-radius: 35px;
 	padding: 5px;
+}
+
+.form3rd {
+	width: 100%;
+}
+
+.form4th {
 	
 }
 
@@ -86,6 +91,10 @@ div.divButtons3rd {
 	background-color: #3EB25E;
 	border-radius: 35px;
 	padding: 10px;
+	/*width: 418px;
+	height: 36px;
+	left: 734px;
+	top: 623px;*/
 }
 
 .displayBlock {
@@ -135,17 +144,6 @@ div.buttonsFlex {
 	margin-right: auto;
 }
 
-/*input {
-	/*width: 8vw;*/
-	/*width: 50%;
-	color: #FFFFFF;
-	font-weight: bold;
-	font-family: 'Roboto', sans-serif;
-	background-color: #3EB25E;
-	border-radius: 35px;
-	padding: 10px;
-}*/
-
 .inputIndex {
 	width: 35%;
 }
@@ -165,9 +163,8 @@ div.buttonsFlex {
 
 div.radioAlign {
 	/*display: flex;*/
-	/*flex-direction: column;
-	text-align: right;*/
-	margin-right: 50%;
+	/*flex-direction: column;*/
+	text-align: left;
 	font-size: 150%;
 	font-family: 'Roboto', sans-serif;
 	width: 100%;
@@ -180,18 +177,17 @@ div.radioAlign label {
 
 /* MEDIA QUERIES */
 @media (max-width: 590px) {
-	main > section, main > section.second {
+	main > section {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		width: 90%;
-		padding: 15px;
+		/*padding: 15px;*/
 		text-align: center;
 	}
 	
 	section > div {
 		/*width: 30vw;*/
-		width: 100%;
+		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
 	}
@@ -208,16 +204,7 @@ div.radioAlign label {
 }
 
 @media (min-width: 500px) and (max-width: 1192px){
-	input {
-		/*width: 18vw;*/
-		width: 80%;
-		color: #FFFFFF;
-		background-color: #3EB25E;
-		border-radius: 35px;
-		padding: 12px;
-		margin-left: auto;
-		margin-right: auto;
-	}
+	
 	div.buttonsFlex {
 		display: flex;
 		/*width: 40vw;*/
@@ -227,6 +214,15 @@ div.radioAlign label {
 		margin-left: auto;
 		margin-right: auto;
 	}
+	
+	div.radioAlign {
+	/*display: flex;*/
+	/*flex-direction: column;*/
+	text-align: left;
+	font-size: 150%;
+	font-family: 'Roboto', sans-serif;
+	width: 100%;
+}
 }
 
 /*@media (max-width: 1258px) {
