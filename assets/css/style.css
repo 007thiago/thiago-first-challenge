@@ -10,6 +10,11 @@
 	border: 0
 }
 
+body {
+	margin-top: 2%;
+	margin-bottom: 2%;
+}
+
 p {
 	font-family: 'Roboto', sans-serif;
 }
@@ -36,8 +41,23 @@ section.second div:nth-child(2) p:last-child {
 
 section > div {
 	width: 40%;
-	padding: 20px;
+	/*padding: 20px;
+	Talvez ao remover o padding, o problema de botao na pagina 3 solucione*/
 }
+
+.errorMessageForm {
+	visibility: hidden;
+	width: 50%;
+	text-align: left;
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	padding: 6px;
+	background-color: red;
+}
+
+/*.errorMessageForm:active {
+	transform: scale (2);
+	/*transition: 1.5s;
+}*/
 
 .imgIndex {
 	width: 80%;
@@ -50,14 +70,6 @@ p.text_3rd {
 	padding: 10px;
 }
 
-div.containerButtons3rd {
-	/*width: 30vw;*/
-	/*width: 80%;*/
-	width: 55%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 div.divButtons3rd {
 	display: flex;
 	padding: 15px;
@@ -66,13 +78,12 @@ div.divButtons3rd {
 
 .buttonPadrao {
 	/*width: 8vw;*/
-	width: 10%;
+	width: 40%;
 	color: #FFFFFF;
 	font-weight: bold;
 	font-family: 'Roboto', sans-serif;
 	background-color: #3EB25E;
 	border-radius: 35px;
-	padding: 5px;
 }
 
 .form3rd {
@@ -127,16 +138,6 @@ main img {
 	/*width: 30vw;*/
 }
 
-.buttonPadrao {
-	width: 100%;
-}
-
-section > div:nth-child(2) div:first-child {
-	width: 100%;
-	margin-left: auto;
-	margin-right: auto;
-}
-
 div.buttonsFlex {
 	display: flex;
 	justify-content: space-between;
@@ -162,12 +163,9 @@ div.buttonsFlex {
 }
 
 div.radioAlign {
-	/*display: flex;*/
-	/*flex-direction: column;*/
 	text-align: left;
 	font-size: 150%;
 	font-family: 'Roboto', sans-serif;
-	width: 100%;
 }
 
 div.radioAlign label {
