@@ -26,23 +26,9 @@ main > section {
 	justify-content: space-evenly;
 }
 
-section.second div:nth-child(2) p:first-child {
-	/*font-size: 2vw;*/
-	font-size: 40%;
-	padding: 10px;
-}
-
-section.second div:nth-child(2) p:last-child {
-	/*font-size: 2vw;*/
-	font-size: 30%;
-	font-weight: none;
-	padding: 10px;
-}
-
 section > div {
 	width: 40%;
-	/*padding: 20px;
-	Talvez ao remover o padding, o problema de botao na pagina 3 solucione*/
+	padding: 20px;
 }
 
 .errorMessageForm {
@@ -70,20 +56,28 @@ p.text_3rd {
 	padding: 10px;
 }
 
-div.divButtons3rd {
+div.divButtons {
 	display: flex;
 	padding: 15px;
 	justify-content: space-between;
 }
 
+input.textBox {
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	border-radius: 20px;
+	width: 459px;
+	height: 225px;
+}
+
 .buttonPadrao {
 	/*width: 8vw;*/
-	width: 40%;
+	width: 45%;
 	color: #FFFFFF;
 	font-weight: bold;
 	font-family: 'Roboto', sans-serif;
 	background-color: #3EB25E;
 	border-radius: 35px;
+	padding: 4px;
 }
 
 .form3rd {
@@ -152,7 +146,6 @@ div.buttonsFlex {
 .select3rd {
 	border: 1px solid rgba(0, 0, 0, 0.25);
 	border-radius: 15px;
-	/*width: 25vw;*/
 	width: 100%;
 	padding: 8px;
 	font-family: 'Roboto', sans-serif;
@@ -169,7 +162,6 @@ div.radioAlign {
 }
 
 div.radioAlign label {
-	/*font-size: 1.5vw;*/
 	font-size: 70%;
 }
 
@@ -179,23 +171,16 @@ div.radioAlign label {
 		display: block;
 		margin-left: auto;
 		margin-right: auto;
-		/*padding: 15px;*/
 		text-align: center;
 	}
 	
 	section > div {
-		/*width: 30vw;*/
 		width: 80%;
 		margin-left: auto;
 		margin-right: auto;
 	}
-
-	/*section > div:last-child {
-		width: 30vw;
-	}*/
 	
 	p.text2 {
-		/*font-size: 1.5vw;*/
 		font-size: 120%;
 		padding: 10px;
 	}
@@ -205,7 +190,6 @@ div.radioAlign label {
 	
 	div.buttonsFlex {
 		display: flex;
-		/*width: 40vw;*/
 		width: 100%;
 		flex-wrap: nowrap;
 		justify-content: space-evenly;
@@ -214,22 +198,51 @@ div.radioAlign label {
 	}
 	
 	div.radioAlign {
-	/*display: flex;*/
-	/*flex-direction: column;*/
-	text-align: left;
-	font-size: 150%;
-	font-family: 'Roboto', sans-serif;
-	width: 100%;
-}
+		text-align: left;
+		font-size: 150%;
+		font-family: 'Roboto', sans-serif;
+		width: 100%;
+	}
 }
 
-/*@media (max-width: 1258px) {
-	input {
-		width: 10vw;
-		height: 4vw;
-		color: #FFFFFF;
-		background-color: #3EB25E;
-		border-radius: 35px;
-		padding: 12px;
+@media (max-width: 608px) {
+	input.textBox {
+		width: 261px;
+		height: 129px;
 	}
-}*/
+}
+
+@media (min-width: 608px) and (max-width: 675px) {
+	input.textBox {
+		width: 271px;
+		height: 134px;
+	}
+}
+
+@media (min-width: 675px) and (max-width: 755px) {
+	input.textBox {
+		width: 301px;
+		height: 148px;
+	}
+}
+
+@media (min-width: 755px) and (max-width: 825px) {
+	input.textBox {
+		width: 334px;
+		height: 164px;
+	}
+}
+
+@media (min-width: 825px) and (max-width: 945px) {
+	input.textBox {
+		width: 371px;
+		height: 182px;
+	}
+}
+
+@media (min-width: 945px) and (max-width: 1070px) {
+	input.textBox {
+		width: 413px;
+		height: 202px;
+	}
+}
