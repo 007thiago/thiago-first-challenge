@@ -14,12 +14,17 @@
 				<img src="assets/image/two.svg">
 			</div>
 			<div>
-				<form class="form3rd" action="4th.html">
+				<div class="errorMessageForm">
+						<p> You need to select an option. </p>
+				</div>
+				<form class="form3rd" action="4th.html" onsubmit="return validateSelect()">
 					<p class="text_3rd"> What is the status of your account? </p>
 					<select name="select_account" id="select_account" class="select3rd">
+						<option value="blank">Select an option</option>
 						<option value="no_account" > I have not created an account yet. </option>
 						<option value="forgot_password"> I forgot my password. </option>
 						<option value="forgot username"> I forgot my username. </option>
+						<div> <img src="assets/image/seta.svg"> </div>
 					</select>
 					<p class="text_3rd"> In which financial markets do you operate? </p>
 					<div class="radioAlign">
@@ -33,8 +38,12 @@
 						<label for="bitcoin"> Bitcoin </label> </p>
 					</div>
 					<div class="divButtons">
-						<input type="submit" value="Next" class="buttonPadrao">
-						<a href="2nd.html" class="buttonPadrao"> <input type="button" value="Back" class="buttonPadrao"> </a>
+						<div class="divAuxiliarBotoes1">
+							<a href="2nd.html"> <input type="button" class="buttonPadrao" value="Back"> </a>
+						</div>
+						<div class="divAuxiliarBotoes2">
+							<input type="submit" value="Next" class="buttonPadrao">
+						</div>
 					</div>
 				</form>
 				<a href="4th.html"> <input type="button" value="Skip" class="buttonSkip"> </a>
