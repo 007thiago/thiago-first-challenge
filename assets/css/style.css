@@ -96,9 +96,14 @@ div.divPadding {
 	background-color: #3EB25E;
 	border-radius: 35px;
 	padding: 6px;
+	width: 90%;
 	margin-bottom: 2%;
 }
 
+.buttonPadrao6:hover {
+	background-color: #FFFF7D;
+	color: black;
+}
 a {
 	width: 100%;
 }
