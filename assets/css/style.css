@@ -78,6 +78,7 @@ input.textBox {
 div.divPadding {
 	padding: 15px;
 }
+
 .buttonPadrao {
 	width: 80%;
 	color: #FFFFFF;
@@ -101,7 +102,6 @@ div.divPadding {
 a {
 	width: 100%;
 }
-
 
 .buttonPadrao:hover {
 	background-color: #FFFF7D;
@@ -144,9 +144,6 @@ a {
 	width: 100%;
 }
 
-.form4th {
-	
-}
 .buttonSkip {
 	width: 95%;
 	color: #FFFFFF;
@@ -184,7 +181,6 @@ p.text2 {
 	margin-bottom: 8.8%;
 }
 
-
 main img {
 	width: 100%;
 }
@@ -199,8 +195,6 @@ div.buttonsFlex {
 .inputIndex {
 	width: 35%;
 }
-
-
 
 .select3rd {
 	border: 1px solid rgba(0, 0, 0, 0.25);
