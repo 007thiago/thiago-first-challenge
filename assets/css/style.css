@@ -31,22 +31,28 @@ section > div {
 	padding: 20px;
 }
 
+div.divAuxiliarBotoes1 {
+	text-align: left;
+	width: 100%;
+}
+
+div.divAuxiliarBotoes2 {
+	text-align: right;
+	width: 100%;
+}
+
 .errorMessageForm {
 	visibility: hidden;
 	width: 50%;
 	text-align: left;
 	border: 1px solid rgba(0, 0, 0, 0.25);
+	border-radius: 10px;
 	padding: 6px;
 	background-color: red;
 }
 
-/*.errorMessageForm:active {
-	transform: scale (2);
-	/*transition: 1.5s;
-}*/
-
 .imgIndex {
-	width: 80%;
+	width: 65%;
 }
 
 p.text_3rd {
@@ -69,15 +75,69 @@ input.textBox {
 	height: 225px;
 }
 
+div.divPadding {
+	padding: 15px;
+}
 .buttonPadrao {
-	/*width: 8vw;*/
+	width: 80%;
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	background-color: #3EB25E;
+	border-radius: 35px;
+	padding: 6px;
+}
+
+.buttonPadrao6 {
+	color: #FFFFFF;
+	font-weight: bold;
+	font-family: 'Roboto', sans-serif;
+	background-color: #3EB25E;
+	border-radius: 35px;
+	padding: 6px;
+	margin-bottom: 2%;
+}
+
+a {
+	width: 100%;
+}
+
+
+.buttonPadrao:hover {
+	background-color: #FFFF7D;
+	color: black;
+}
+
+.buttonPadraoIndex {
 	width: 45%;
+	height: 35.55px;
+	margin-top: 8%;
 	color: #FFFFFF;
 	font-weight: bold;
 	font-family: 'Roboto', sans-serif;
 	background-color: #3EB25E;
 	border-radius: 35px;
 	padding: 4px;
+}
+
+.input6 {
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+	width: 100%;
+	padding: 8px;
+	font-family: 'Roboto', sans-serif;
+	float: left;
+	margin-bottom: 2%;
+}
+
+.input6Age {
+	border: 1px solid rgba(0, 0, 0, 0.25);
+	border-radius: 15px;
+	width: 10%;
+	padding: 8px;
+	font-family: 'Roboto', sans-serif;
+	float: left;
+	margin-bottom: 2%;
 }
 
 .form3rd {
@@ -87,19 +147,19 @@ input.textBox {
 .form4th {
 	
 }
-
 .buttonSkip {
-	width: 100%;
+	width: 95%;
 	color: #FFFFFF;
 	font-weight: bold;
 	font-family: 'Roboto', sans-serif;
 	background-color: #3EB25E;
 	border-radius: 35px;
 	padding: 10px;
-	/*width: 418px;
-	height: 36px;
-	left: 734px;
-	top: 623px;*/
+}
+
+.buttonSkip:hover {
+	background-color: #FFFF7D;
+	color: black;
 }
 
 .displayBlock {
@@ -107,8 +167,7 @@ input.textBox {
 }
 
 p.text1 {
-	/*font-size: 3vw;*/
-	font-size: 550%;
+	font-size: 8vw;
 	text-align: center;
 	font-weight: bold;
 }
@@ -121,15 +180,13 @@ p.text1-2 {
 }
 
 p.text2 {
-	/*font-size: 1.5vw;*/
 	font-size: 200%;
-	padding: 10px;
+	margin-bottom: 8.8%;
 }
 
 
 main img {
 	width: 100%;
-	/*width: 30vw;*/
 }
 
 div.buttonsFlex {
@@ -142,6 +199,8 @@ div.buttonsFlex {
 .inputIndex {
 	width: 35%;
 }
+
+
 
 .select3rd {
 	border: 1px solid rgba(0, 0, 0, 0.25);
@@ -182,7 +241,12 @@ div.radioAlign label {
 	
 	p.text2 {
 		font-size: 120%;
-		padding: 10px;
+		padding: 10px;*/
+	}
+	
+	.imgIndex {
+		width: 65%;
+		margin-right: 20%;
 	}
 }
 
