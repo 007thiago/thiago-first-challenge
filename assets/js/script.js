@@ -3,7 +3,7 @@ function validateSelect (form) {
 	var ddl = document.getElementById("select_account");
 	var selected = ddl.options[ddl.selectedIndex].value;
 	if (selected == "blank") {
-		document.getElementsByClassName("errorMessageForm")[0].style.visibility = "visible";
+		document.getElementsByClassName("errorMessageForm1")[0].style.visibility = "visible";
 		document.getElementsByClassName("select3rd")[0].style.backgroundColor = "#AEAEAE";
 		
 		setTimeout(() => {
